@@ -11,3 +11,14 @@ FONT = {
     'Caption 1': {'Weight': 'Regular', 'Size (points)': 12, 'Leading (points)': 16},
     'Caption 2': {'Weight': 'Regular', 'Size (points)': 11, 'Leading (points)': 13}
 }
+
+WEIGHT = {
+    'Thin': {'Font.Weight': 'thin', 'Numeric value': 100},
+    'Ultra Light': {'Font.Weight': 'ultraLight', 'Numeric value': 200},
+    'Light': {'Font.Weight': 'light', 'Numeric value': 300},
+    'Regular': {'Font.Weight': 'regular', 'Numeric value': 400},
+    'Medium': {'Font.Weight': 'medium', 'Numeric value': 500},
+    'Semi Bold': {'Font.Weight': 'semiBold', 'Numeric value': 600},
+    'Bold': {'Font.Weight': 'bold', 'Numeric value': 700},
+    'Black/Heavy': {'Font.Weight': 'heavy, black', 'Numeric value': 900}
+}

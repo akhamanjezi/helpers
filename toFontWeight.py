@@ -1,17 +1,9 @@
 import argparse
+import repo
+
+table = repo.WEIGHT
 
 if __name__ == "__main__":
-    table = {
-        'Thin': {'Font.Weight': 'thin', 'Numeric value': 100},
-        'Ultra Light': {'Font.Weight': 'ultraLight', 'Numeric value': 200},
-        'Light': {'Font.Weight': 'light', 'Numeric value': 300},
-        'Regular': {'Font.Weight': 'regular', 'Numeric value': 400},
-        'Medium': {'Font.Weight': 'medium', 'Numeric value': 500},
-        'Semi Bold': {'Font.Weight': 'semiBold', 'Numeric value': 600},
-        'Bold': {'Font.Weight': 'bold', 'Numeric value': 700},
-        'Black/Heavy': {'Font.Weight': 'heavy, black', 'Numeric value': 900}
-    }
-
     parser = argparse.ArgumentParser(
         description='Print Font.Weight based on numeric value')
     parser.add_argument('size', type=int, nargs='?', help='font weight')
