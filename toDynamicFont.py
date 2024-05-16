@@ -30,6 +30,5 @@ if __name__ == "__main__":
                     util.print_column(key, value)
                     break
         else:
-            print(
-                f"Size {size} not found. Please enter a valid size or 'exit'.")
+            util.print_column_with_closest_property_in(table.items(), lookup_col, size)
         size = input("\nEnter the size (point) or type 'exit' to quit: ")
