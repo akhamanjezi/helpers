@@ -1,6 +1,8 @@
 import argparse
 import repo
+import util
 
+lookup_col = 'Numeric value'
 table = repo.WEIGHT
 
 if __name__ == "__main__":
@@ -22,12 +24,11 @@ if __name__ == "__main__":
         except ValueError:
             size = input("\nInvalid input. Please enter a number or 'exit': ")
             continue
-        if size in [value['Numeric value'] for value in table.values()]:
+        if size in [value[lookup_col] for value in table.values()]:
             for key, value in table.items():
-                if value['Numeric value'] == int(size):
-                    print(f"\n{key}\n{'-' * len(key)}")
-                    for k, v in value.items():
-                        print(f"{k}: {v}")
+                if value[lookup_col] == int(size):
+                    util.print_column(key, value)
+                    break
         else:
             print(
                 f"Size {size} not found. Please enter a valid weight value or 'exit'.")
