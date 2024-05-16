@@ -2,11 +2,11 @@
 
 ## toDynamicFont.py
 
-A python program that returns the environment-dependent [Font](https://developer.apple.com/documentation/swiftui/font) for a given font pt size.
+A python script that returns the environment-dependent [Font](https://developer.apple.com/documentation/swiftui/font) for a given font pt size.
 
 ### Usage
 
-A python program that returns the [Font.Weight](https://developer.apple.com/documentation/swiftui/font/weight) for a given numeric value.
+A python script that returns the [Font.Weight](https://developer.apple.com/documentation/swiftui/font/weight) for a given numeric value.
 
 ```zsh
 $   python toDynamicFont.py 13
