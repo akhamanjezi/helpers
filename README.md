@@ -6,8 +6,6 @@ A python script that returns the environment-dependent [Font](https://developer.
 
 ### Usage
 
-A python script that returns the [Font.Weight](https://developer.apple.com/documentation/swiftui/font/weight) for a given numeric value.
-
 ```zsh
 $   python toDynamicFont.py 13
 
@@ -23,6 +21,8 @@ Enter the size (point) or type 'exit' to quit:
 ## toFontWeight.py
 
 ### Usage
+
+A python script that returns the [Font.Weight](https://developer.apple.com/documentation/swiftui/font/weight) for a given numeric value.
 
 ```zsh
 $   python toFontWeight.py 400
